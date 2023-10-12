@@ -1,7 +1,7 @@
 function Panier({price}) {
     return (
         <div>
-            <h1>Prix total: {price}€</h1>
+            <h3>Prix total: {price}€</h3>
         </div>
     )
 }
