@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Bouton from "./Bouton";
 
 function Promo({ finalPrice }) {
   const [clicked, setClicked] = useState(false);
@@ -15,9 +16,13 @@ function Promo({ finalPrice }) {
   };
   return (
     <div>
-      <button disabled={clicked} onClick={handlePrice}>
-        Promo Wilders
-      </button>
+      <Bouton
+        color="black"
+        backgroundColor="royalBlue"
+        texte={"Promo Wilders"}
+        disabled={clicked}
+        clicked={handlePrice}
+      />
 
       <h3>{total !== undefined ? total : finalPrice}</h3>
     </div>
